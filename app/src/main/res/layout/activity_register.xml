@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Login.register">
+
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#83E466"
+        android:padding="16dp"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/password3"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edit_text"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:text="Xác nhận mật khẩu"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edit_text"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:text="Mật khẩu"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username3" />
+
+    <EditText
+        android:id="@+id/username3"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edit_text"
+        android:hint="Họ và Tên"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:shadowColor="#040404"
+        android:text="Họ và Tên"
+        android:textColor="#020202"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username2" />
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edit_text"
+        android:hint="Số đện thoại"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:shadowColor="#040404"
+        android:text="Số điện thoại của bạn"
+        android:textColor="#020202"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="182dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="Đăng Ký"
+        android:textColor="#040404"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="303dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Tôi đã đọc và đồng ý với Chính sách  quy định và Chính sách bảo vệ dữ liệu cá nhn của Eto"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="12dp"
+        android:text="Bạn đã có tài khoản ?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:text="Đăng nhập"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
