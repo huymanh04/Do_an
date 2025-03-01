@@ -1,14 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.tab_acc">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="acc" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="48dp"
+            android:text="Lê Hồng Công"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="614dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/img_7" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="291dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="tài khoản của tôi"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_send" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/img_2" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="389dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="1"
+                    android:text="thông tin của tôi"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="131dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_media_play" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="0"
+                    android:text="yêu thích"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@android:drawable/ic_media_play" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView114"
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView213"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="0"
+                    android:text="thằng mạnh ăn loz"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageVie1w16"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/ip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="#F6EFEF"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView1141"
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView2131"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="0"
+                    android:text="quà tặng"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageVie1w161"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/ip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView11412"
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView21312"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="0"
+                    android:text="giới thiệu"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageVie1w1612"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/ip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="#F6F1F1"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView11411"
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView21311"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="0"
+                    android:text="đổi mật khẩu"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageVie1w1611"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/ip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView1141111"
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView2131111"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="0"
+                    android:text="yêu cầu xóa tài khoản"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageVie1w161111"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:src="@drawable/ip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_weight="0"
+                    android:text="đăng xuất"
+                    android:textAlignment="center"
+                    android:textColor="#D90C0C"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

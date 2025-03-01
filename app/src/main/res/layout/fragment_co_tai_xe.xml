@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#181313"
     tools:context=".fragment.thue_xe.co_tai_xe">
 
     <!-- TODO: Update blank fragment layout -->

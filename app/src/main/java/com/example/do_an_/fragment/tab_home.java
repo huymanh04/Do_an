@@ -3,12 +3,17 @@ package com.example.do_an_.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.do_an_.R;
+import com.example.do_an_.ViewPagerAdapter;
+import com.example.do_an_.fragment.thue_xe.Viewtab;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -56,11 +61,51 @@ public class tab_home extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager;
+    private Viewtab adapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_tab_home, container, false);
+
+        // Ánh xạ ViewPager2 & TabLayout
+        tabLayout = view.findViewById(R.id.tab_layout);
+        viewPager = view.findViewById(R.id.view_page);
+
+        // Khởi tạo Adapter
+        adapter = new Viewtab(this);
+        viewPager.setAdapter(adapter);
+
+        // Liên kết TabLayout với ViewPager2
+        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
+            switch (position) {
+                case 0:
+                    tab.setText("Xe tự lái");
+
+                    break;
+                case 1:
+                    tab.setText("Xe có tài xế");
+                    break;
+            }
+        }).attach();
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                tab.view.setBackgroundColor(getResources().getColor(R.color.selected_tab)); // Màu khi chọn
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                tab.view.setBackgroundColor(getResources().getColor(R.color.unselected_tab)); // Màu khi bỏ chọn
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+                // Không cần xử lý
+            }
+        });
+        return view;
     }
 }

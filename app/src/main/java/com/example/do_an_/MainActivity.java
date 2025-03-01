@@ -1,6 +1,7 @@
 package com.example.do_an_;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
@@ -19,6 +20,7 @@ import com.example.do_an_.fragment.tab_chat;
 import com.example.do_an_.fragment.tab_chuyen;
 import com.example.do_an_.fragment.tab_home;
 import com.example.do_an_.fragment.tab_sp;
+import com.example.do_an_.fragment.thue_xe.Viewtab;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //viewpage tablayout
         {
+
 
         }
     }

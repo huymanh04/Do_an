@@ -12,36 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Do_an_"
         tools:targetApi="31">
-        <activity
-            android:name=".fragment.thue_xe.tulai"
-            android:exported="false" />
-        <activity
-            android:name=".fragment.tim_chuyen"
-            android:exported="false" />
+
         <activity
             android:name=".fragment.tab_chat"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".fragment.tab_home"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".fragment.tab_chuyen"
-            android:exported="false" />
-        <activity
-            android:name=".tb_sp"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
         <activity
             android:name=".fragment.tab_acc"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Login.register"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Login.Login"
             android:exported="false"
             android:theme="@style/Theme.Do_an_" />
         <activity
-            android:name=".Login.Login"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

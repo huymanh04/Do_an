@@ -160,12 +160,12 @@
 
     <RadioButton
         android:id="@+id/radioButton"
-        android:layout_width="303dp"
-        android:layout_height="31dp"
+        android:layout_width="395dp"
+        android:layout_height="42dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:text="Tôi đã đọc và đồng ý với Chính sách  quy định và Chính sách bảo vệ dữ liệu cá nhn của Eto"
-        android:textSize="10sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password3" />
 
