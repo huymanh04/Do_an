@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         //viewpage manu
         {
         viewPager = findViewById(R.id.viewPager);
+            viewPager.setUserInputEnabled(false);
         home = findViewById(R.id.btnhome);
         thue = findViewById(R.id.btnthue);
         suport = findViewById(R.id.btnsp);

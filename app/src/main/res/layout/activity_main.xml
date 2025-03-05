@@ -16,6 +16,17 @@
 
     </androidx.viewpager2.widget.ViewPager2>
 
-    <include layout="@layout/menu_navigation" />
+<include layout="@layout/menu_navigation" />
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/btnnav"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        app:labelVisibilityMode="labeled"-->
+<!--        app:menu="@menu/bottom_nav_menu"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="820dp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
